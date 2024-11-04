@@ -3,6 +3,8 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1.3
 // @description  Edit freely. Save globally. See quickly.
+// @updateURL    https://github.com/ethandacat/editcat/blob/main/DoNotDownload.user.js
+// @downloadURL  https://github.com/ethandacat/editcat/blob/main/DoNotDownload.user.js
 // @author       ethandacat
 // @match        *://*/*
 // @grant        none
