@@ -3,6 +3,8 @@
 
 EditCat is a TamperMonkey userscript that **you** can use to edit and see the browser elements, with ease.
 
+To install, simply choose a release from the right. The DoNotDownload file is pretty explanatory.
+
 ---
 
 To toggle EditCat, simply press the EditCat button on the top left of your screen.
