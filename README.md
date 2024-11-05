@@ -2,16 +2,17 @@
 ## Edit freely. Save globally. See quickly.
 
 EditCat is a TamperMonkey userscript that **you** can use to edit and see the browser elements, with ease.
-
-To install, simply choose a release from the right. The DoNotDownload file is pretty explanatory.
-
 ---
 
-To toggle EditCat, simply press the EditCat button on the top left of your screen.
+# Installation
 
-Next, click on an element of choice to change or view.
+To install EditCat, there are two ways, auto-installation and manual installation.
 
-On a side panel on the right, you should be able to see and edit details.
+To automatically install EditCat, click this:
+
+[<img src="https://www.pngall.com/wp-content/uploads/2/Download-Button-PNG.png" width="170" height="100">](https://github.com/ethandacat/editcat/raw/refs/heads/main/EditCat.user.js)
+
+To manually install EditCat, choose a release to download from the right and then upload it to TamperMonkey or your preferred userscript manager.
 
 ---
 
