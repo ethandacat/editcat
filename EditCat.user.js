@@ -3,8 +3,8 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1.5
 // @description  Edit freely. Save globally. See quickly.
-// @updateURL    https://github.com/ethandacat/editcat/raw/refs/heads/main/EditCat-0.1.4.user.js
-// @downloadURL  https://github.com/ethandacat/editcat/raw/refs/heads/main/EditCat-0.1.4.user.js
+// @updateURL    https://github.com/ethandacat/editcat/raw/refs/heads/main/EditCat.user.js
+// @downloadURL  https://github.com/ethandacat/editcat/raw/refs/heads/main/EditCat.user.js
 // @author       ethandacat
 // @match        *://*/*
 // @grant        none
