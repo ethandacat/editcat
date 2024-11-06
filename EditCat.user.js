@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EditCat
 // @namespace    http://tampermonkey.net/
-// @version      0.1.5
+// @version      0.1.51
 // @description  Edit freely. Save globally. See quickly.
 // @updateURL    https://github.com/ethandacat/editcat/raw/refs/heads/main/EditCat.user.js
 // @downloadURL  https://github.com/ethandacat/editcat/raw/refs/heads/main/EditCat.user.js
