@@ -3,7 +3,15 @@
 
 EditCat is a TamperMonkey userscript that **you** can use to edit and see the browser elements, with ease.
 ### Why EditCat?
-It's open source, 
+- It's open source
+- It's user friendly
+- It's community supported
+- Anyone can contribute, including you!
+  <details>
+    <summary>How to contribute</summary>
+
+    Fork this resp, then open an issue with your fork inside, and your changes (with the lines please). Your fork will either be merged, or rejected in which case we will close the issue and notify you.
+  </details>
 
 # Installation
 
