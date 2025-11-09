@@ -1,0 +1,84 @@
+<h3 style="color:white;">Element Details</h3>
+<details style="background-color: rgba(0, 0, 0, 0.6); border-radius: 8px; padding: 10px; margin-bottom: 10px;">
+    <summary style="font-weight: bold; color: white;">Identifiers</summary>
+    <p style="color:white;">Tag: <span style="color: #80cbc4;">${tagName}</span></p>
+    <p><strong style="color: white;">ID:</strong> <span style="color: #80cbc4;">${id}</span></p>
+    <p><strong style="color: white;">Classes:</strong> <span style="color: #80cbc4;">${classes}</span></p>
+</details>
+
+<details style="background-color: rgba(0, 0, 0, 0.6); border-radius: 8px; padding: 10px; margin-bottom: 10px;">
+    <summary style="font-weight: bold; color: white;">Attributes:</summary>
+    <p style="color:white; overflow-wrap: break-word;">${attributes || "No attributes available."}</p>
+</details>
+
+<details style="background-color: rgba(0, 0, 0, 0.6); border-radius: 8px; padding: 10px; margin-bottom: 10px;">
+    <summary style="font-weight: bold; color: white;">Styles:</summary>
+    <pre style="color:white; background-color: #333; padding: 10px; border-radius: 5px; border: 1px solid #80cbc4;">
+        ${styleListHtml}
+    </pre>
+</details>
+
+<details style="background-color: rgba(0, 0, 0, 0.6); border-radius: 8px; padding: 10px;">
+    <summary style="font-weight: bold; color: white;">Edit:</summary>
+    <div class="editcat-container">
+        <div class="input-group" style="margin-bottom: 15px;">
+            <label for="style-property" class="input-label" style="color:white;">Style Property:</label>
+            <input id="style-property" class="editcat-style-property"
+                style="color:white; background-color: rgba(0, 0, 0, 0.3); height: 30px; width: 250px; font-family: monospace; border-radius: 5px; border: 1px solid #80cbc4; padding: 5px;"
+                placeholder="Enter property">
+        </div>
+
+        <div class="input-group" style="margin-bottom: 15px;">
+            <label for="style-value" class="input-label" style="color:white;">Style Value:</label>
+            <input id="style-value" class="editcat-style-value"
+                style="color:white; background-color: rgba(0, 0, 0, 0.3); height: 30px; width: 250px; font-family: monospace; border-radius: 5px; border: 1px solid #80cbc4; padding: 5px;"
+                placeholder="Enter value">
+        </div>
+
+        <div class="button-group" style="margin-bottom: 15px;">
+            <button class="editcat-style-button"
+                style="color:white; background-color: rgba(0, 0, 0, 0.7); border: 1px solid #80cbc4; border-radius: 5px; padding: 5px 10px; width: 100%; cursor: pointer;">
+                Edit Style
+            </button>
+        </div>
+
+        <div class="input-group" style="margin-bottom: 15px;">
+            <label for="class-property" class="input-label" style="color:white;">Class Property:</label>
+            <input id="class-property" class="editcat-class-property"
+                style="color:white; background-color: rgba(0, 0, 0, 0.3); height: 30px; width: 250px; font-family: monospace; border-radius: 5px; border: 1px solid #80cbc4; padding: 5px;"
+                placeholder="Enter class">
+        </div>
+
+        <div class="button-group" style="display: flex; justify-content: space-between;">
+            <button class="editcat-class-button"
+                style="color:white; background-color: rgba(0, 0, 0, 0.7); border: 1px solid #80cbc4; border-radius: 5px; padding: 5px 10px; width: 48%; cursor: pointer;">
+                Add Class
+            </button>
+            <button class="editcat-class-button"
+                style="color:white; background-color: rgba(0, 0, 0, 0.7); border: 1px solid #80cbc4; border-radius: 5px; padding: 5px 10px; width: 48%; cursor: pointer;">
+                Remove Class
+            </button>
+        </div>
+
+         <div class="input-group" style="margin-bottom: 15px;">
+            <label for="style-property" class="input-label" style="color:white;">Attribute Property:</label>
+            <input id="style-property" class="editcat-att-property"
+                style="color:white; background-color: rgba(0, 0, 0, 0.3); height: 30px; width: 250px; font-family: monospace; border-radius: 5px; border: 1px solid #80cbc4; padding: 5px;"
+                placeholder="Enter property">
+        </div>
+
+        <div class="input-group" style="margin-bottom: 15px;">
+            <label for="style-value" class="input-label" style="color:white;">Attribute Value:</label>
+            <input id="style-value" class="editcat-att-value"
+                style="color:white; background-color: rgba(0, 0, 0, 0.3); height: 30px; width: 250px; font-family: monospace; border-radius: 5px; border: 1px solid #80cbc4; padding: 5px;"
+                placeholder="Enter value">
+        </div>
+
+        <div class="button-group" style="margin-bottom: 15px;">
+            <button class="editcat-att-button"
+                style="color:white; background-color: rgba(0, 0, 0, 0.7); border: 1px solid #80cbc4; border-radius: 5px; padding: 5px 10px; width: 100%; cursor: pointer;">
+                Edit Attribute
+            </button>
+        </div>
+    </div>
+</details>

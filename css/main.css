@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+	font-family: 'EditFont';
+	src: local('Roboto');
+}
+
+.editcat-shadow-host {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999;
+    pointer-events: none;
+}
+
+.editcat-shadow-root {
+    font-family: "EditFont", sans-serif;
+}
+
+.editcat-container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	padding: 0;
+	margin: 0;
+}
+
+.input-group {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	padding: 0;
+	margin: 0;
+}
+
+.input-label {
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	width: 150px;
+	padding: 0;
+	margin: 0;
+}
+
+.button-group {
+	display: flex;
+	gap: 10px;
+	background-color: rgba(0, 0, 0, 0);
+	padding: 0;
+	margin: 0;
+}
+
+.editcat-style-button,
+.editcat-class-button,
+.editcat-att-button {
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+
+.editcat-style-button:hover,
+.editcat-class-button:hover,
+.editcat-att-button:hover {
+	background-color: #3e8e41;
+}
+
+.editcat-class-button:hover {
+	background-color: #e53935;
+}
+
+.editcat-bg {
+    background: linear-gradient(159deg, #000000, #340e81, #0052a2, #340e81, #000000);
+    background-size: 1000% 1000%;
+    pointer-events: auto;
+
+    -webkit-animation: editcatbg 6s ease infinite;
+    -moz-animation: editcatbg 6s ease infinite;
+    -o-animation: editcatbg 6s ease infinite;
+    animation: editcatbg 6s ease infinite;
+}
+
+#editcat-button-container {
+    align-content: center;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#editcat-button {
+    position:fixed;
+    top:30px; 
+    left:30px; 
+    color: white; 
+    background-color:black; 
+    border-radius:20px; 
+    width:40px; 
+    height:40px; 
+    border: none; 
+    z-index:999999;
+}
+
+.editcat-button-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+@-webkit-keyframes editcatbg {
+    0%{background-position:22% 0%}
+    50%{background-position:79% 100%}
+    100%{background-position:22% 0%}
+}
+@-moz-keyframes editcatbg {
+    0%{background-position:22% 0%}
+    50%{background-position:79% 100%}
+    100%{background-position:22% 0%}
+}
+@-o-keyframes editcatbg {
+    0%{background-position:22% 0%}
+    50%{background-position:79% 100%}
+    100%{background-position:22% 0%}
+}
+@keyframes editcatbg {
+    0%{background-position:22% 0%}
+    50%{background-position:79% 100%}
+    100%{background-position:22% 0%}
+}
