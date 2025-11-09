@@ -11,11 +11,6 @@
 // @resource     icon https://i.postimg.cc/4x8jqb73/image.png
 // @grant        GM_getResourceText
 // @icon         https://i.postimg.cc/4x8jqb73/image.png
-// ==/UserScript==
-
-window.img = GM_getResourceURL('icon');
-
-// ==UserScript==
 // @require      https://github.com/ethandacat/editcat/raw/refs/heads/refactor/js/main.js
 // ==/UserScript==
 

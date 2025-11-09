@@ -10,6 +10,8 @@ const defaults = {
   attributes: "No attributes available."
 };
 
+const img = GM_getResourceURL('icon');
+
 function renderTemplate(template, context = window) {
   return template.replace(/\$\{([\w.]+)\}/g, (_, key) => {
     // Support nested object keys: user.name
