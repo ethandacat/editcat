@@ -10,11 +10,14 @@
 // @resource     editcatcss https://github.com/ethandacat/editcat/raw/refs/heads/refactor/css/main.css
 // @resource     icon https://i.postimg.cc/4x8jqb73/image.png
 // @grant        GM_getResourceText
-// @require      https://github.com/ethandacat/editcat/raw/refs/heads/refactor/js/main.js
 // @icon         https://i.postimg.cc/4x8jqb73/image.png
 // ==/UserScript==
 
-const img = GM_getResourceURL('icon');
+window.img = GM_getResourceURL('icon');
+
+// ==UserScript==
+// @require      https://github.com/ethandacat/editcat/raw/refs/heads/refactor/js/main.js
+// ==/UserScript==
 
 (function() {
   const cssText = GM_getResourceText('editcatcss');
