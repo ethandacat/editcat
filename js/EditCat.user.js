@@ -7,7 +7,15 @@
 // @downloadURL  https://github.com/ethandacat/editcat/raw/refs/heads/main/EditCat.user.js
 // @author       ethandacat
 // @match        */*
-// @grant        none
+// @resource     editcatcss https://github.com/ethandacat/editcat/raw/refs/heads/refactor/css/main.css
+// @grant        GM_getResourceText
 // @require      https://github.com/ethandacat/editcat/raw/refs/heads/refactor/js/main.js
 // @icon         https://i.postimg.cc/4x8jqb73/image.png
 // ==/UserScript==
+
+(function() {
+  const cssText = GM_getResourceText('editcatcss');
+  const style = document.createElement('style');
+  style.textContent = cssText;
+  document.head.appendChild(style);
+})();

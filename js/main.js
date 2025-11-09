@@ -22,16 +22,6 @@ function loadHTML(url, container) {
     });
 }
 
-function loadCSS(filename) {
-  const link = document.createElement('link');
-  link.rel = 'stylesheet';
-  link.href = filename;
-  link.type = 'text/css';
-  document.head.appendChild(link);
-}
-
-loadCSS("https://github.com/ethandacat/editcat/raw/refs/heads/refactor/css/main.css");
-
 const shadowHost = document.createElement('div');
 shadowHost.classList.add("editcat-shadow-host");
 document.body.appendChild(shadowHost);
@@ -161,10 +151,9 @@ function toggleInspector() {
 
 // Create the inspector button (with a unique ID)
 const inspectButton = document.createElement("div");
-inspectButton.innerHTML = ``;
+loadHTML("https://github.com/ethandacat/editcat/raw/refs/heads/refactor/html/inspect.html");
 inspectButton.onclick = toggleInspector;
 inspectButton.id = "editcat-button-container";
-shadowRoot.appendChild(cStyles);
 shadowRoot.appendChild(inspectButton);
 
 function checkToStopEditCat() {
