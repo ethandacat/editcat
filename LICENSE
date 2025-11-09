@@ -1,4 +1,5 @@
 # Cat License
+version 1.2
 
 This software is licensed under the Cat License (the "License"). By using, copying, modifying, or distributing this software (the "Catware"), you agree to comply with the terms set forth below.
 
@@ -7,7 +8,7 @@ Subject to the terms and conditions of this License, you are hereby granted a pe
 2. Attribution Requirements
 Unmodified Copies: If you distribute an unmodified copy of the Catware, you must provide clear and visible attribution to the original author in the following format: "Original software by [Author Name]", with a hyperlink (if possible) to the original source of the Catware on each page or interface where the Catware is used.
 Modified Versions: If you copy and modify the Catware, you must:
-Include prominent attribution to the original author in the following format: "Based on software by [Author Name]", including a hyperlink (if possible) to the original source.
+Include prominent attribution to the original author in the following format or similar: "Based on software by [Author Name]", including a hyperlink (if possible) to the original source.
 Describe all significant modifications in a Modifications Notice section within the README file and in any significant locations within the modified files.
 3. License Consistency
 You must retain this License, in its entirety, on all copies or substantial portions of the Catware, including but not limited to any modified versions, derivatives, or adaptations of the Catware.
