@@ -2,8 +2,6 @@
 
 // main program handler of EditCat
 
-const img = 'https://i.postimg.cc/4x8jqb73/image.png'
-
 const variables = {
   attributes: "", // could be undefined, null, or actual value
   name: "EditCat"
