@@ -4,17 +4,32 @@
 
 const img = 'https://i.postimg.cc/4x8jqb73/image.png'
 
-function loadHTML(url, container) {
+const variables = {
+  attributes: "", // could be undefined, null, or actual value
+  name: "EditCat"
+};
+const defaults = {
+  attributes: "No attributes available."
+};
+
+function renderTemplate(template, context = window) {
+  return template.replace(/\$\{([\w.]+)\}/g, (_, key) => {
+    // Support nested object keys: user.name
+    const keys = key.split(".");
+    let value = context;
+    for (const k of keys) {
+      value = value?.[k];
+      if (value === undefined) return ""; // fallback if not found
+    }
+    return value;
+  });
+}
+
+function loadHTML(url, container, context) {
   fetch(url)
     .then(response => response.text())
     .then(template => {
-      // Evaluate template using global window as context
-      const evaluateTemplate = new Function(
-        "with(window) { return `" + template + "`; }"
-      );
-
-      const renderedHTML = evaluateTemplate.call(window);
-
+      const renderedHTML = renderTemplate(template, context); // or provide a scoped object instead of window
       container.innerHTML = renderedHTML;
     })
     .catch(error => {
@@ -44,7 +59,12 @@ function showElementInfo(element) {
     const styleList = Array.from(styles).map(key => `${key}: ${styles.getPropertyValue(key)};`);
     const styleListHtml = styleList.join("<br>");
 
-    loadHTML("https://github.com/ethandacat/editcat/raw/refs/heads/refactor/html/panel.html", sidePanel);
+    loadHTML("https://github.com/ethandacat/editcat/raw/refs/heads/refactor/html/panel.html", sidePanel, {
+        tagName,
+        id,
+        classes,
+        attributes: attributes || "No attributes available."
+    });
 
     document.getElementsByClassName("editcat-att-button")[0].onclick = function () {
         // EditCat Style Edit
@@ -151,7 +171,9 @@ function toggleInspector() {
 
 // Create the inspector button (with a unique ID)
 const inspectButton = document.createElement("div");
-loadHTML("https://github.com/ethandacat/editcat/raw/refs/heads/refactor/html/inspect.html");
+loadHTML("https://github.com/ethandacat/editcat/raw/refs/heads/refactor/html/inspect.html", inspectButton, {
+    'img': img
+});
 inspectButton.onclick = toggleInspector;
 inspectButton.id = "editcat-button-container";
 shadowRoot.appendChild(inspectButton);
